@@ -1,0 +1,264 @@
+[
+    {
+        "Id": "fa2215855067e9b527eb86ae0ed3b028acafa4fc391ac3c56e0b8bdccfd3bec0",
+        "Created": "2022-08-05T19:05:17.1038372Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [
+            "postgres"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 9421,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2022-08-07T21:53:28.5361909Z",
+            "FinishedAt": "2022-08-07T21:52:03.9527899Z"
+        },
+        "Image": "sha256:e09e90144645e02137d087f0dc059f4d2e3c6356ef8f9e40eeb15d1c901dbc73",
+        "ResolvConfPath": "/var/lib/docker/containers/fa2215855067e9b527eb86ae0ed3b028acafa4fc391ac3c56e0b8bdccfd3bec0/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/fa2215855067e9b527eb86ae0ed3b028acafa4fc391ac3c56e0b8bdccfd3bec0/hostname",
+        "HostsPath": "/var/lib/docker/containers/fa2215855067e9b527eb86ae0ed3b028acafa4fc391ac3c56e0b8bdccfd3bec0/hosts",
+        "LogPath": "/var/lib/docker/containers/fa2215855067e9b527eb86ae0ed3b028acafa4fc391ac3c56e0b8bdccfd3bec0/fa2215855067e9b527eb86ae0ed3b028acafa4fc391ac3c56e0b8bdccfd3bec0-json.log",
+        "Name": "/database_games_api",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "games-api_pgdata:/data/postgres:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "games-api_default",
+            "PortBindings": {
+                "5432/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "5432"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "always",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": [],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "host",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "KernelMemory": 0,
+            "KernelMemoryTCP": 0,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": false,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/2596d941f084a9aa6b62a96f23e43ff391d5d8360198aac48f68afce7e2767e6-init/diff:/var/lib/docker/overlay2/d37ce7ba1b16163b038b1d422cc04a853ac942af42a5b671ac27bbb1c7aa6db5/diff:/var/lib/docker/overlay2/1058a4a22250f7b9ae7f237cce9ca50766a9a774639dfd2e2a63a6830c8161e6/diff:/var/lib/docker/overlay2/c0b80e61864a7f2a538cc53d0fd29e77657f32e2d13989a40bfa04dc21cbe7b4/diff:/var/lib/docker/overlay2/a4de6a014bff1f83e4a59f3e1c0bf712916f435c8d86de87cdc4028bb29d3623/diff:/var/lib/docker/overlay2/c4eeac762779ff78ebaaf4511406b5a58e8cd57045b0af6fdf19c0520f2d2af6/diff:/var/lib/docker/overlay2/e61918045dad64ac79f1fe1633e893839ee6d127d96645b4fc1ecf9d0d95954a/diff:/var/lib/docker/overlay2/3fa08acd90d381392060eee70c2eaf4b8cedd88253e9a3184cb8ca4c2d58ad7c/diff:/var/lib/docker/overlay2/e89a0491628e7b4f155cfea5474c8ab84efcaf47a91293f74dba32f7223ea9d8/diff:/var/lib/docker/overlay2/e7157f9d032c8a8f5a944e765b2b69a7c0126211fc2d28bb9fa231523d0cc083/diff:/var/lib/docker/overlay2/6873e10c644c1a758a248c8b6a740caa7465f78995387109228ee88af4a521da/diff:/var/lib/docker/overlay2/0104821868d4289e5bb1cb371866b234660c9baa4a8c305e027137c41efdd3e9/diff:/var/lib/docker/overlay2/1c45d3420fbecd124b328f4b5ddfc3ec07cb77b1c6cd7f6b990630cc59c20a8d/diff:/var/lib/docker/overlay2/b637e47bb8c8f48c1550bc53b77e9db99ca1492cdb62abdacd804ff2a2c31f7f/diff",
+                "MergedDir": "/var/lib/docker/overlay2/2596d941f084a9aa6b62a96f23e43ff391d5d8360198aac48f68afce7e2767e6/merged",
+                "UpperDir": "/var/lib/docker/overlay2/2596d941f084a9aa6b62a96f23e43ff391d5d8360198aac48f68afce7e2767e6/diff",
+                "WorkDir": "/var/lib/docker/overlay2/2596d941f084a9aa6b62a96f23e43ff391d5d8360198aac48f68afce7e2767e6/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "games-api_pgdata",
+                "Source": "/var/lib/docker/volumes/games-api_pgdata/_data",
+                "Destination": "/data/postgres",
+                "Driver": "local",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "volume",
+                "Name": "7f0009ba4dccf0ae161b5388c0b8971df0dde86486df3f23712a5b196420a52f",
+                "Source": "/var/lib/docker/volumes/7f0009ba4dccf0ae161b5388c0b8971df0dde86486df3f23712a5b196420a52f/_data",
+                "Destination": "/var/lib/postgresql/data",
+                "Driver": "local",
+                "Mode": "",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "fa2215855067",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "5432/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "POSTGRES_USER=games",
+                "POSTGRES_PASSWORD=games",
+                "POSTGRES_DB=games_api",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/14/bin",
+                "GOSU_VERSION=1.14",
+                "LANG=en_US.utf8",
+                "PG_MAJOR=14",
+                "PG_VERSION=14.4-1.pgdg110+1",
+                "PGDATA=/var/lib/postgresql/data"
+            ],
+            "Cmd": [
+                "postgres"
+            ],
+            "Image": "postgres",
+            "Volumes": {
+                "/data/postgres": {},
+                "/var/lib/postgresql/data": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "com.docker.compose.config-hash": "75e983b426d857db2448847c0c1594d23f71b457f42179647f1431ac4c4fef0c",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "games-api",
+                "com.docker.compose.project.config_files": "docker-compose.yml",
+                "com.docker.compose.project.working_dir": "C:\\Projetos\\games-api",
+                "com.docker.compose.service": "database",
+                "com.docker.compose.version": "1.29.2"
+            },
+            "StopSignal": "SIGINT"
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "d10cdd49dc8911cd3f9c6a78239639f4892cd290243f8788982ccf6932aa6d0d",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": {
+                "5432/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "5432"
+                    }
+                ]
+            },
+            "SandboxKey": "/var/run/docker/netns/d10cdd49dc89",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "games-api_default": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "database",
+                        "fa2215855067"
+                    ],
+                    "NetworkID": "84aa8d41150dd4a2126a6a5d0afcbd917b873b1af6c502394f04c3c43c571c08",
+                    "EndpointID": "86a0ca7ed2cbc895090c609406aedf5233d6905ee7ddcfc0931fed2240dbf353",
+                    "Gateway": "172.18.0.1",
+                    "IPAddress": "172.18.0.2",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "02:42:ac:12:00:02",
+                    "DriverOpts": null
+                }
+            }
+        }
+    }
+]
