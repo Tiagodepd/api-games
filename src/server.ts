@@ -4,7 +4,6 @@ import { router } from "./routes";
 
 const app = express();
 const port = 5000;
-const data = "Hello";
 
 app.use(express.json());
 app.use(router);
